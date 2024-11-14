@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of John Doe, Web Developer">
+    <title>John Doe | Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        section {
+            padding: 50px 20px;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .projects, .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project, .skill {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+
+        .project img, .skill img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .project h3, .skill h3 {
+            font-size: 1.4em;
+            margin-top: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>John Doe</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm John, a passionate web developer with a love for creating intuitive and dynamic user experiences. I specialize in front-end development, using HTML, CSS, and JavaScript to build responsive websites and applications. I am always learning new technologies to stay ahead in the ever-evolving world of web development.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>Project One</h3>
+                <p>A responsive portfolio website built using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>An e-commerce site built with React and Node.js for a better shopping experience.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>Project Three</h3>
+                <p>A mobile-friendly blog site using WordPress and custom themes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <img src="https://via.placeholder.com/100x100" alt="HTML">
+                <h3>HTML</h3>
+                <p>Expert in building accessible, semantic HTML structures.</p>
+            </div>
+            <div class="skill">
+                <img src="https://via.placeholder.com/100x100" alt="CSS">
+                <h3>CSS</h3>
+                <p>Proficient in responsive design, animations, and CSS frameworks like Bootstrap.</p>
+            </div>
+            <div class="skill">
+                <img src="https://via.placeholder.com/100x100" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Experienced in vanilla JavaScript and modern libraries like React and Vue.js.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 John Doe | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
